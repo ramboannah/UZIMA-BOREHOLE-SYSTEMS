@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzima Borehole System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>💧 Uzima Borehole Management System</h1>
+
+    <div class="container">
+
+      <div class="dashboard">
+    <div class="card">
+        <h3>Total Records</h3>
+        <p id="totalRecords">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Water Used</h3>
+        <p id="totalWater">0</p>
+    </div>
+<div class="card">
+    <h3>Total Payments</h3>
+    <p id="totalPayments">0</p>
+</div>
+        <h2>Add Water Usage</h2>
+
+        <form id="usageForm">
+            <input type="text" id="borehole" placeholder="Enter Borehole Name" required>
+            <input type="number" id="amount" placeholder="Water Used (Litres)" required>
+            <button type="submit">Add Record</button>
+        </form>
+
+        <h2>Records</h2>
+        <ul id="recordsList"></ul>
+<h2>Record Payment</h2>
+
+<form id="paymentForm">
+    <input type="text" id="payer" placeholder="Payer Name" required>
+    <input type="number" id="paymentAmount" placeholder="Amount Paid" required>
+    <button type="submit">Add Payment</button>
+</form>
+
+<h2>Payments</h2>
+<ul id="paymentList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    
